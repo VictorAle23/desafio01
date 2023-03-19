@@ -1,0 +1,104 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+p {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+.desktop {
+  display: none;
+}
+
+.futureweb {
+  margin-top: 1rem;
+}
+
+.titulo-webfuture {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  width: 80%;
+}
+.decripcion-webfuture {
+  margin-top: 0.8rem;
+}
+.futureweb .btn {
+  display: block;
+  width: 55vw;
+  max-width: 200px;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: inherit;
+  color: hsl(36, 100%, 99%);
+  background: hsl(5, 85%, 63%);
+  border: transparent;
+  padding: 0.75rem 0;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+
+.futureweb .btn:hover {
+  background: hsl(240, 100%, 5%);
+}
+
+@media screen and (min-width: 968px) {
+  .banner-img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .futureweb {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    height: 100%;
+  }
+  .futureweb {
+    display: flex;
+    column-gap: 3rem;
+  }
+  .titulo-webfuture {
+    flex: 1;
+    font-size: 3rem;
+  }
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .decripcion-webfuture {
+    margin-top: 0;
+  }
+  .futureweb .btn {
+    margin-top: 0;
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 968px) {
+  .seccion {
+    display: grid;
+    gap: 1.7rem;
+    grid-template-columns: 750px 350px;
+  }
+}
