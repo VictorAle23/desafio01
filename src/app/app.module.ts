@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BannerModule } from './banner/banner.module';
 import { BannerdosModule } from './bannerdos/bannerdos.module';
+import { FooterModule } from './footer/footer.module';
 import { MenuModule } from './menu/menu.module';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MenuModule } from './menu/menu.module';
     BrowserModule,
     MenuModule,
     BannerModule,
-    BannerdosModule
+    BannerdosModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
