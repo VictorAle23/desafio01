@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BannerModule } from './banner/banner.module';
+import { BannerdosModule } from './bannerdos/bannerdos.module';
 import { MenuModule } from './menu/menu.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { MenuModule } from './menu/menu.module';
   imports: [
     BrowserModule,
     MenuModule,
-    BannerModule
+    BannerModule,
+    BannerdosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
